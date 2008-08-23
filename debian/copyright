@@ -1,0 +1,40 @@
+This package was debianized by René van Bevern <rvb@pro-linux.de> on
+Sun, 17 Apr 2005 21:20:12 +0200.
+
+It was downloaded from the darcs repository at
+http://modeemi.fi/~tuomov/repos/ion-scripts-3/
+
+Copyright Holder: The copyright holder is the respective author of each script
+                  as mentioned in their comments.
+
+License:
+
+The scripts provided in this package are Public Domain unless
+specified differently in the script headers. The following scripts are
+subject to different license terms:
+
+You can find the full license text of the GNU General Public License
+Version 2 at /usr/share/common-licenses/GPL-2 and the full license
+text of the BSD license at /usr/share/common-licenses/BSD
+
+   statusbar_act.lua: (C) 2006 Tuomo Valkonen
+                      GPL version 2 or later
+
+   statusd_bsdbatt.lua: (C) 2005 Russell A. Jackson
+                      BSD license
+
+   statusd_iface.lua, statusd_inetaddr.lua, statusd_iwinfo.lua:
+                      (C) 2004 Relu Patrascu
+                      GPL version 2 or later
+
+   statusd_laptopstatus.lua: (C) 2005 Jari Eskelinen
+                      GPL version 2
+
+   statusd_maildir.lua: (C) 2005 Brett Parker
+                      GPL version 2 or later
+
+   statusd_mocmon.lua: (C) Hendrik Iben
+   		      GPL version 2
+
+   statusd_xmms.lua: (C) Peter Randeu
+   		      GPL version 2

@@ -1,0 +1,5 @@
+statusd/* /usr/share/ion3
+statusbar/* /usr/share/ion3
+scripts/* /usr/share/ion3
+styles/* /etc/X11/ion3
+keybindings/* /etc/X11/ion3

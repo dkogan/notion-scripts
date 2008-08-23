@@ -1,0 +1,20 @@
+Source: ion3-scripts
+Section: contrib/x11
+Priority: extra
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Build-Depends: debhelper (>= 4.1.16), cdbs
+Standards-Version: 3.7.2
+Homepage: http://modeemi.fi/~tuomov/repos/ion-scripts-3/
+
+Package: ion3-scripts
+Architecture: all
+Depends: ion3 (>= 20060519)
+Enhances: ion3
+Suggests: apmd, wireless-tools, mpd, pytone, procps, wget, net-tools, pyxmms-remote, curl, amarok
+Description: user-contributed add-ons to the Ion 3 window manager
+ Provides user-contributed add-ons to the Ion 3 window manager,
+ Including:
+  * scripts that can alter Ion's window management behaviour
+  * monitors for Ion's statusbar to monitor disk usage, network
+    traffic, battery and more.
+  * multiple themes that change Ion's look

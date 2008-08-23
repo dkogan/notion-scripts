@@ -1,0 +1,41 @@
+general
+-------
+
+To change configuration options in scripts and status monitors, you do
+neither need to copy them to your user-local ion3 directory nor to
+modify them in the system-wide place.
+
+You can configure them from other configuration files and load them
+/before/ you load the actual script, so that your configuration is
+preserved on upgrades of the ion3-scripts package. Scripts will use
+the configuration that is already present in the environment.
+
+For configuration templates, have a look into the script you are going
+to configure.
+
+ion3-scripts
+------------
+
+ion3-scripts is a collection of user-contributed lua scripts from the
+ion-scripts-3 darcs repository. It can be found online at
+http://modeemi.fi/~tuomov/repos/ion-scripts-3/
+
+A brief description the scripts can be found as a comment in each one
+as well as in index.html. They can be found in /etc/X11/ion3 for themes
+and /usr/share/ion3 for scripts and monitors.
+
+
+Status monitors
+---------------
+To use the status monitors, do not load them explicitly using 'dopath'. Just use
+their name in the template of your statusbar configuration "cfg_statusbar.lua".
+For example, use this template to use statusd_mpd.lua, statusd_batt.lua and
+statusd_uptime.lua:
+
+	template="[ %mpd || %batt || %uptime ]"
+
+Themes
+------
+After installation, the newly-installed themes are visible in your Ion3 menu.
+
+ -- René van Bevern <rvb@pro-linux.de>, Tue Aug 23 16:54:43 2005

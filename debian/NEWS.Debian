@@ -1,0 +1,13 @@
+ion3-scripts (20060215-1) unstable; urgency=low
+
+    Upstream renamed a lot of files to contain underscores (_) instead of
+    dashes (-) so that they have a uniform naming scheme. If your ion3
+    configuration refers to such scripts literally (i.e. dopath), please
+    check the correctness of your references.
+  
+    The old "look-" files in /etc/X11/ion3 are per default preserved, and
+    their equivalent "look_" files are installed additionaly, so that you
+    do not lose customization. If you don't need them anymore, they can
+    safely be deleted.
+
+ -- René van Bevern <rvb@progn.org>  Wed, 15 Feb 2006 14:27:44 +0100

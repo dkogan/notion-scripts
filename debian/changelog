@@ -1,0 +1,341 @@
+ion3-scripts (20070515.debian-1) unstable; urgency=low
+
+  * QA upload.
+  * Fake new upstream version to circumvent a bug in dak, this is still the
+    same as upstream 2007051.
+  * Moved package to contrib (closes: Bug#474547).
+  * Specify Homepage field in debian/control.
+  * Fix spelling in debian/copyright.
+  * Removed bogus build-indep-depends.
+  * Removed unversionend Suggests: coreutils.
+
+ -- Ralf Treinen <treinen@debian.org>  Sat, 23 Aug 2008 11:14:33 +0200
+
+ion3-scripts (20070515-1) unstable; urgency=low
+
+  * QA upload.
+  * New upstream snapshot.
+
+ -- Clint Adams <schizo@debian.org>  Thu, 17 May 2007 10:20:19 -0400
+
+ion3-scripts (20070322-1) unstable; urgency=low
+
+  * QA upload.
+  * New upstream snapshot. 
+
+ -- Clint Adams <schizo@debian.org>  Sat, 14 Apr 2007 17:07:46 -0400
+
+ion3-scripts (20070203-2) unstable; urgency=low
+
+  * Upload to unstable.
+  * Merge changes from 20061214-2.
+
+ -- Norbert Tretkowski <nobse@debian.org>  Sun,  1 Apr 2007 20:55:30 +0200
+
+ion3-scripts (20061214-2) unstable; urgency=low
+
+  * Orphaning package.
+
+ -- Norbert Tretkowski <nobse@debian.org>  Mon, 26 Mar 2007 13:27:51 +0200
+
+ion3-scripts (20070203-1) experimental; urgency=low
+
+  * New upstream snapshot.
+
+ -- Norbert Tretkowski <nobse@debian.org>  Sat,  3 Feb 2007 17:07:37 +0100
+
+ion3-scripts (20061214-1) unstable; urgency=medium
+
+  * New upstream snapshot.
+    + Updated scripts framecycle.lua, min_tabs.lua and statusbar_workspace.lua
+      to work properly with recent versions of ion3. (closes: #396555)
+
+ -- Norbert Tretkowski <nobse@debian.org>  Thu, 21 Dec 2006 20:49:14 +0100
+
+ion3-scripts (20061027-1) unstable; urgency=low
+
+  * New upstream snapshot.
+  * Removed obsolete scripts. (closes: #396287)
+
+ -- Norbert Tretkowski <nobse@debian.org>  Wed,  1 Nov 2006 13:27:42 +0100
+
+ion3-scripts (20061015-1) unstable; urgency=low
+
+  * New upstream snapshot.
+  * New maintainer, thanks Rene! (closes: #390856)
+
+ -- Norbert Tretkowski <nobse@debian.org>  Tue, 17 Oct 2006 19:31:31 +0200
+
+ion3-scripts (20060626-1) unstable; urgency=low
+
+  * New snapshot
+    + statusd_laptopstatus.lua: temperature_template changed
+      from xxC to xxxC (Closes: #375414)
+  
+  * debian/patches/01-apm-directory.patch has gone into Darcs repository
+    + debian/rules: do not include CDBS' simple-patchsys
+
+ -- René van Bevern <rvb@debian.org>  Mon, 26 Jun 2006 09:33:14 +0200
+
+ion3-scripts (20060624-1) unstable; urgency=low
+
+  * New snapshot with scripts updated to not use the _LOADED table, which
+    is not available in Ion3 anymore.
+
+ -- René van Bevern <rvb@debian.org>  Sat, 24 Jun 2006 19:38:36 +0200
+
+ion3-scripts (20060530-1) unstable; urgency=low
+
+  * New upstream
+
+ -- René van Bevern <rvb@debian.org>  Tue, 30 May 2006 17:36:58 +0200
+
+ion3-scripts (20060519-1) experimental; urgency=low
+
+  * New snapshot, upload to experimental because:
+    + updated scripts to work with Lua 5.1 that is used in Ion3 20060519.
+  
+  * debian/install:
+    + install lock_frame.lua
+    + install the latest statusd_mpd.lua, since it has been fixed (removed
+      debian/replace/statusd_mpd.lua)
+
+  * debian/control:
+    + Depends: ion3 (>= 20060519)
+    + Standards-Version: 3.7.2, no changes
+
+ -- René van Bevern <rvb@debian.org>  Fri, 19 May 2006 15:24:39 +0200
+
+ion3-scripts (20060420-1) unstable; urgency=low
+
+  * New snapshot
+  
+  * debian/control: updated my e-mail address
+  
+  * debian/copyright: explicitly list files that are not public domain
+  
+  * debian/install: install the older but reliably working statusd_mpd
+    instead of the new one that rarely delivers any result
+
+  * The following scripts are new:
+    - environment_placement_hook -- (with Linux only) is able to place
+      some applications in the frames they were started from
+    - look_asm.lua
+    - statusd_fortune.lua -- displays fortunes in the status bar
+    - statusd_xmmsip.lua -- displays more detailed information about
+      XMMS than the other statusd_xmms.lua
+    - statusd_mocmon.lua -- a MOC monitor based on statusd_xmmsip.lua
+
+ -- René van Bevern <rvb@debian.org>  Fri, 21 Apr 2006 08:16:13 +0200
+
+ion3-scripts (20060306-1) unstable; urgency=low
+
+  * New snapshot:
+    + following scripts are new: statusd_orpheus, frame_client_menu,
+      vim_bindings, bindsearch, look_awesome_yaarg, rotate_statusbar
+
+    + Upstream renamed lots of files to contain underscores (_) instead of
+      dashes (-), refer to NEWS.Debian please.
+
+  * debian/control: depend on ion3 20060305 because WScratchpad class was
+    dropped and some scripts adapted (detach.lua and
+    toggle_named_scratchpad.lua)
+  
+  * debian/install: install new scripts and content of statusbar/
+    + don't install cwin_sp.lua, as it will not work with the new ion3
+
+  * Upload sponsored by Norbert Tretkowski <nobse@debian.org>
+
+ -- René van Bevern <rvb@progn.org>  Mon,  6 Mar 2006 18:31:17 +0100
+
+ion3-scripts (20060119-1) unstable; urgency=low
+
+  * New snapshot:
+    + statusd_inet_addr and statusd_iw_info_min renamed to
+      statusd_inetaddr and statusd_iwinfo, because ion3 interpreted the
+      previous names in a manner that it took "inet" and "iw" for the
+      monitor names. Thanks to Martin F. Krafft for submiting a patch
+      (Closes: #348759)
+
+    + statusd_inetaddr should better call "close" on the pipe it opened
+      instead of leaving a trail of ifconfig zombies behind.
+      (Closes: #348876)
+
+  * the following scripts are new:
+    - statusd_moc.lua: status of the "Music on Console" player
+  
+  * Upload sponsored by Norbert Tretkowski <nobse@debian.org>
+
+ -- René van Bevern <rvb@progn.org>  Thu, 19 Jan 2006 17:39:34 +0100
+
+ion3-scripts (20051220-1) unstable; urgency=low
+
+  * New snapshot
+    - detach.lua uses ion3's new function ioncore.current() to find out
+      the current screen (Closes: #342793)
+      + debian/rules: depend on ion3 20051210
+
+  * The following scripts are new:
+    - toggle_named_scratchpad.lua: toggle and create named scratchpads
+    - query-url.lua: query for URLs in ions input line with automatic
+      completion using URLs or names of bookmarks (Opera is currently
+      supported)
+    - statusd_linuxbatt.lua: show battery status using Linux and ACPI
+    - statusd_cpufrep.lua: show currently set CPU frequency
+    - statusd_amarok.lua: show currently playing song in AmaroK
+      + add amarok to Suggests:
+
+  * debian/install: cfg_dock.lua is renamed to cfg_dock2.lua, to not
+    interference with ion3's original cfg_dock.lua
+
+  * debian/control: cdbs and debhelper are needed in Build-Depends
+    because they are used in the clean target
+
+  * Upload sponsored by Norbert Tretkowski <nobse@debian.org>
+
+ -- René van Bevern <rvb@pro-linux.de>  Mon, 20 Dec 2005 10:28:34 +0100
+
+ion3-scripts (20051205-1) unstable; urgency=low
+
+  * New snapshot
+
+  * The following scripts are new:
+    + look-ootput.lua
+    + statusd_bsdbatt.lua
+    + switch_bindings.lua
+
+  * debian/install: install switch_bindings.lua
+
+  * debian/control: add space in front of Homepage: in package description
+
+  * Upload sponsored by Norbert Tretkowski <nobse@debian.org>
+
+ -- René van Bevern <rvb@pro-linux.de>  Mon,  5 Dec 2005 11:13:11 +0100
+
+ion3-scripts (20051011-1) unstable; urgency=low
+
+  * New snapshot
+
+  * debian/install: all styles are converted to ion3, so install all of
+    them. New are:
+    + look-alex, look-awesome-sm, look-awesome,
+    + look-cleanpastel, look-cool, look-gtk2, look-qt
+
+  * debian/install: new scripts
+    + document_menus, adapt_menus, autoprop
+
+  * Upload sponsored by Norbert Tretkowski <nobse@debian.org>
+
+ -- René van Bevern <rvb@pro-linux.de>  Tue, 11 Oct 2005 20:15:17 +0200
+
+ion3-scripts (20050909-1) unstable; urgency=low
+
+  * New snapshot
+
+  * debian/install: install document_menus.lua
+
+  * Upload sponsored by Norbert Tretkowski <nobse@debian.org>
+
+ -- René van Bevern <rvb@pro-linux.de>  Fri,  9 Sep 2005 09:32:48 +0200
+
+ion3-scripts (20050823-1) unstable; urgency=low
+
+  * New snapshot
+
+  * all scripts and status monitors are now externally configurable, so
+    that per-user configuration is possible and preserved on upgrades
+  * debian/README.Debian: add configuration hints
+
+  * debian/control: require a recent ion3 version because of changes in
+    rss_feed.lua
+
+  * debian/install: install key- and mouse bindings, _all_ status monitors
+    and the following new scripts:
+     + cfg_dock.lua
+     + xinerama_switcher.lua
+     + look_tiny.lua
+  * also new are:
+     + statusd_maildir.lua
+     + dans-bindings.lua
+
+  * ChangeLog: update upstream darcs history
+
+  * Upload sponsored by Norbert Tretkowski <nobse@debian.org>
+
+ -- René van Bevern <rvb@pro-linux.de>  Tue, 23 Aug 2005 16:43:39 +0200
+
+ion3-scripts (20050810-1) unstable; urgency=low
+
+  * New snapshot (Closes: #320593)
+  * ChangeLog: update upstream darcs history
+  * debian/install: add statusd_maildir.lua
+
+  * Upload sponsored by Norbert Tretkowski <nobse@debian.org>
+
+ -- René van Bevern <rvb@pro-linux.de>  Wed, 10 Aug 2005 15:51:58 +0200
+
+ion3-scripts (20050728-1) unstable; urgency=low
+
+  * New snapshot
+  * ChangeLog: update upstream VCS history
+  * debian/install: add statusd_xmms, statusd_apm
+  * debian/rules: include simple-patchsys
+  * debian/patches/01-apm-directory.patch: Debian's apm is in /usr/bin
+  * debian/control: Suggest external tools, set Standards-Version to 3.6.2
+
+  * Upload sponsored by Norbert Tretkowski <nobse@debian.org>
+
+ -- René van Bevern <rvb@pro-linux.de>  Thu, 28 Jul 2005 15:22:52 +0200
+
+ion3-scripts (20050615-1) unstable; urgency=low
+
+  * fix typo in the fix for #313289: statusd_laptopstatus.lua: /proc/cpuinfo
+    instead of /proc/cpinfo
+
+ -- René van Bevern <rvb@pro-linux.de>  Wed, 15 Jun 2005 13:15:57 +0200
+
+ion3-scripts (20050614-1) unstable; urgency=low
+
+  * New snapshot
+  * Closes: #313289: statusd_laptopstatus fails refreshing
+  * add new workspace.lua to debian/install
+  * uses cdbs
+  * Build-Depends-Indep instead of Build-Depends
+
+ -- René van Bevern <rvb@pro-linux.de>  Tue, 14 Jun 2005 00:40:40 +0200
+
+ion3-scripts (20050523-1) unstable; urgency=low
+
+  * new snapshot
+  * added new scripts to debian/install
+  * added homepage to description
+  * changed subsection to fit override file (x11)
+
+ -- René van Bevern <rvb@pro-linux.de>  Mon, 23 May 2005 20:53:55 +0200
+
+ion3-scripts (20050505-1) unstable; urgency=low
+
+  * new snapshot
+  * added new scripts to debian/install
+
+ -- René van Bevern <rvb@pro-linux.de>  Thu,  5 May 2005 09:43:17 +0200
+
+ion3-scripts (20050418-3) unstable; urgency=low
+
+  * priority from "optional" to "extra"
+    (depends on Ion3, which is "extra")
+
+ -- Rene van Bevern (RvB) <rvb@pro-linux.de>  Thu, 21 Apr 2005 00:13:01 +0200
+
+ion3-scripts (20050418-2) unstable; urgency=low
+
+  * add ChangeLog of upstream changes
+
+ -- Rene van Bevern (RvB) <rvb@pro-linux.de>  Tue, 19 Apr 2005 12:01:54 +0200
+
+ion3-scripts (20050418-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Rene van Bevern (RvB) <rvb@pro-linux.de>  Sun, 17 Apr 2005 21:20:12 +0200
+

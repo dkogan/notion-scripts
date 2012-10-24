@@ -1,3 +1,10 @@
+notion-scripts (20121023-1) unstable; urgency=low
+
+  * Debianized latest git tree to new notion-scripts package (Closes:
+    #691224)
+
+ -- Dima Kogan <dima@secretsauce.net>  Tue, 23 Oct 2012 23:28:19 -0700
+
 ion3-scripts (20070515.debian-1) unstable; urgency=low
 
   * QA upload.

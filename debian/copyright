@@ -1,8 +1,10 @@
-This package was debianized by René van Bevern <rvb@pro-linux.de> on
-Sun, 17 Apr 2005 21:20:12 +0200.
+This package was originaly debianized by René van Bevern <rvb@pro-linux.de> on
+Sun, 17 Apr 2005 21:20:12 +0200. Updated from ion3 to notion by Dima Kogan
+<dima@secretsauce.net> on Tue, 23 Oct 2012 22:08:27 -0700.
 
-It was downloaded from the darcs repository at
-http://modeemi.fi/~tuomov/repos/ion-scripts-3/
+It was downloaded from the notion/contrib git repository at
+
+http://notion.git.sourceforge.net/git/gitweb.cgi?p=notion/contrib;a=summary
 
 Copyright Holder: The copyright holder is the respective author of each script
                   as mentioned in their comments.
@@ -13,19 +15,64 @@ The scripts provided in this package are Public Domain unless
 specified differently in the script headers. The following scripts are
 subject to different license terms:
 
-You can find the full license text of the GNU General Public License
-Version 2 at /usr/share/common-licenses/GPL-2 and the full license
-text of the BSD license at /usr/share/common-licenses/BSD
+You can find the full license text of the GNU General Public License Version 2
+at /usr/share/common-licenses/GPL-2
 
-   statusbar_act.lua: (C) 2006 Tuomo Valkonen
-                      GPL version 2 or later
+You can find the full license text of the Lesser GNU General Public License
+Version 2.1 at /usr/share/common-licenses/LGPL-2.1
 
-   statusd_bsdbatt.lua: (C) 2005 Russell A. Jackson
-                      BSD license
+You can find the full license text of the Artistic license at
+/usr/share/common-licenses/Artistic
 
-   statusd_iface.lua, statusd_inetaddr.lua, statusd_iwinfo.lua:
-                      (C) 2004 Relu Patrascu
-                      GPL version 2 or later
+The text of the 2-clause BSD license:
+
+     Redistribution and use in source and binary forms, with or without
+     modification, are permitted provided that the following conditions
+     are met:
+     1. Redistributions of source code must retain the above copyright
+        notice, this list of conditions and the following disclaimer.
+     2. Redistributions in binary form must reproduce the above copyright
+        notice, this list of conditions and the following disclaimer in the
+        documentation and/or other materials provided with the distribution.
+     
+     THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND
+     ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+     IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+     ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+     FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+     DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+     OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+     HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+     LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+     OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+     SUCH DAMAGE.
+
+
+The text of the MIT license:
+
+     Permission is hereby granted, free of charge, to any person obtaining a
+     copy of this software and associated documentation files (the "Software"),
+     to deal in the Software without restriction, including without limitation
+     the rights to use, copy, modify, merge, publish, distribute, sublicense,
+     and/or sell copies of the Software, and to permit persons to whom the
+     Software is furnished to do so, subject to the following conditions:
+
+     The above copyright notice and this permission notice shall be included in
+     all copies or substantial portions of the Software.
+
+     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+     IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+     FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+     AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+     FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+     DEALINGS IN THE SOFTWARE.
+
+
+
+   statusd_iface.lua, statusd_inetaddr.lua, statusd_iwinfo.lua,
+   statusd_cpuspeed.lua, statusd_batt.lua: (C) 2004 Relu Patrascu
+                      LGPL version 2.1 or later
 
    statusd_laptopstatus.lua: (C) 2005 Jari Eskelinen
                       GPL version 2
@@ -33,8 +80,53 @@ text of the BSD license at /usr/share/common-licenses/BSD
    statusd_maildir.lua: (C) 2005 Brett Parker
                       GPL version 2 or later
 
-   statusd_mocmon.lua: (C) Hendrik Iben
+   statusd_mocmon.lua, statusd_fortune.lua, statusd_xmmsip.lua: (C) Hendrik Iben
    		      GPL version 2
 
    statusd_xmms.lua: (C) Peter Randeu
    		      GPL version 2
+
+   statusd_nginfo.lua: (C) 2008 Raffaello Pelagalli
+   		      LGPL version 2.1 or later
+
+   statusd_mem.lua, statusd_flashing.lua,
+   statusd_binclock.lua, statusd_nmaild.lua: (C) 2006 Mario García H.
+   		      GPL version 2
+
+   statusd_weather.lua: (C) 2006 Andrea Rossato, 2008 Sergey Kozhemyakin
+   		      GPL version 2 or later
+
+   statusd_exec.lua: (C) 2006 Antti Vähäkotamäki
+   		      LGPL version 2.1 or later
+
+   statusd_bsdbatt.lua: (C) 2005 Russell A. Jackson
+   		      2-clause BSD
+
+   net_client_list.lua, nowarp_scratchpad.lua, named_floating_groupws.lua,
+   frame_client_menu.lua, show_submap.lua, simple_bindings.lua,
+   named_scratchpad.lua, statusbar_wsname.lua: (C) 2007 Etan Reisner
+   		      MIT license
+
+   weather.lua, stock.lua: (C) 2006 Andrea Rossato
+   		      GPL version 2 or later
+
+   xinerama_switcher.lua: (C) 2005 martin f. krafft
+   		      Artistic
+
+   statusbar_external.lua: (C) Antti Vähäkotamäki 2005
+   		      LGPL version 2.1 or later
+
+   statusbar_act.lua: (C) 2006 Tuomo Valkonen, 2007 Etan Reisner
+   		      LGPL version 2.1 or later
+
+   statusbar_fname.lua: (C) 2007 Emanuele Giaquinta
+   		      LICENSE UNSPECIFIED
+
+   query_url.lua: (C) 2005 Reuben Thomas
+                      GPL
+
+   heuristics.lua: (C) 2003 Tuomo Valkonen
+   		      LICENSE UNSPECIFIED
+
+   xkbion.lua: (C) Sergey Redin
+   		      LICENSE UNSPECIFIED

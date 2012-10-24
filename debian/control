@@ -1,20 +1,23 @@
-Source: ion3-scripts
-Section: contrib/x11
+Source: notion-scripts
+Section: non-free/x11
 Priority: extra
-Maintainer: Debian QA Group <packages@qa.debian.org>
-Build-Depends: debhelper (>= 4.1.16), cdbs
-Standards-Version: 3.7.2
-Homepage: http://modeemi.fi/~tuomov/repos/ion-scripts-3/
+Maintainer: Dima Kogan <dima@secretsauce.net>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.9.3
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/notion-scripts.git
+Vcs-Git: git://git.debian.org/collab-maint/notion-scripts.git
+Homepage: http://notion.sourceforge.net/
 
-Package: ion3-scripts
+Package: notion-scripts
 Architecture: all
-Depends: ion3 (>= 20060519)
-Enhances: ion3
-Suggests: apmd, wireless-tools, mpd, pytone, procps, wget, net-tools, pyxmms-remote, curl, amarok
-Description: user-contributed add-ons to the Ion 3 window manager
- Provides user-contributed add-ons to the Ion 3 window manager,
+Depends: notion, ${misc:Depends}
+Enhances: notion
+Suggests: apmd, wireless-tools, mpd, pytone, procps, wget, net-tools,
+ pyxmms-remote, curl, amarok
+Description: user-contributed add-ons to the Notion window manager
+ Provides user-contributed add-ons to the Notion window manager,
  Including:
-  * scripts that can alter Ion's window management behaviour
-  * monitors for Ion's statusbar to monitor disk usage, network
+  * scripts that can alter Notion's window management behaviour
+  * monitors for Notion's statusbar to monitor disk usage, network
     traffic, battery and more.
-  * multiple themes that change Ion's look
+  * multiple themes that change Notion's look

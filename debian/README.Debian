@@ -2,27 +2,27 @@ general
 -------
 
 To change configuration options in scripts and status monitors, you do
-neither need to copy them to your user-local ion3 directory nor to
+neither need to copy them to your user-local notion directory nor to
 modify them in the system-wide place.
 
 You can configure them from other configuration files and load them
 /before/ you load the actual script, so that your configuration is
-preserved on upgrades of the ion3-scripts package. Scripts will use
+preserved on upgrades of the notion-scripts package. Scripts will use
 the configuration that is already present in the environment.
 
 For configuration templates, have a look into the script you are going
 to configure.
 
-ion3-scripts
-------------
+notion-scripts
+--------------
 
-ion3-scripts is a collection of user-contributed lua scripts from the
-ion-scripts-3 darcs repository. It can be found online at
-http://modeemi.fi/~tuomov/repos/ion-scripts-3/
+notion-scripts is a collection of user-contributed lua scripts from the
+notion/contrib git repository:
+
+http://notion.git.sourceforge.net/git/gitweb.cgi?p=notion/contrib;a=summary
 
 A brief description the scripts can be found as a comment in each one
-as well as in index.html. They can be found in /etc/X11/ion3 for themes
-and /usr/share/ion3 for scripts and monitors.
+as well as in index.html. They can be found in /usr/share/notion.
 
 
 Status monitors
@@ -36,6 +36,6 @@ statusd_uptime.lua:
 
 Themes
 ------
-After installation, the newly-installed themes are visible in your Ion3 menu.
+After installation, the newly-installed themes are visible in your Notion menu.
 
- -- René van Bevern <rvb@pro-linux.de>, Tue Aug 23 16:54:43 2005
+ -- Dima Kogan <dima@secretsauce.net>, Tue, 23 Oct 2012 20:45:58 -0700

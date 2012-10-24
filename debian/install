@@ -1,5 +1,5 @@
-statusd/* /usr/share/ion3
-statusbar/* /usr/share/ion3
-scripts/* /usr/share/ion3
-styles/* /etc/X11/ion3
-keybindings/* /etc/X11/ion3
+statusd/* /usr/share/notion
+statusbar/* /usr/share/notion
+scripts/* /usr/share/notion
+styles/* /usr/share/notion
+keybindings/* /usr/share/notion

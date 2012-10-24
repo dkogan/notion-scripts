@@ -3,3 +3,14 @@
 
 %:
 	dh $@
+
+# rewrite the links in index.html to point to /usr/share/notion
+override_dh_auto_build:
+	perl -pe											\
+	's{ (?<=href=") (?:scripts|keybindings|styles|statusbar|statusd) }{/usr/share/notion}gx'	\
+	index.html > index-debian.html
+
+override_dh_auto_clean:
+	rm -rf index-debian.html
+	dh_auto_clean
+

@@ -12,8 +12,6 @@ Package: notion-scripts
 Architecture: all
 Depends: notion, ${misc:Depends}
 Enhances: notion
-Suggests: apmd, wireless-tools, mpd, pytone, procps, wget, net-tools,
- pyxmms-remote, curl, amarok
 Description: user-contributed add-ons to the Notion window manager
  Provides user-contributed add-ons to the Notion window manager,
  Including:
